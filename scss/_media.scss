@@ -4,98 +4,325 @@
 
 // Экстрабольшие девайсы (большие десктопы, <= 1200px)
 @media (max-width: 1200px) {
-    .main {
-        &-title {
-            display: none;
-        }
-        &-social {
-            & > .h1-like {
-                font-size: 42px;
-                line-height: 64px;
-            }
-        }
+  //Социальные сети
+  .social {
+    &__items {
+      justify-content: center;
     }
+  }
 }
 
 // Большие девайсы (десктопы, <= 992px)
 @media (max-width: 992px) {
-    .head {
-        padding: 20px 20px 20px 20px;
+  // ?Возрастные группы
+  .grouptype {
+    &__container {
+      padding: 10px 40px 10px 40px;
     }
-    .main {
-        padding: 220px 20px 10px 20px;
+  }
+  // Карта
+  .map {
+    &__info {
+      max-width: 240px;
     }
-    .head {
-        &-title {
-            & > .h4-like {
-                // font-size: 14px;
-                // line-height: 22px;
-            }
-        }
-        &-wrap {
-            grid-template-columns: 1fr;
-        }
+  }
+  // ?Тренируйся с нами и стань чемпионом
+  .services {
+    &__items {
+      justify-content: center;
     }
-    .logo {
-        display: none;
+  }
+  // ?Карате больше чем просто спорт
+  .quality {
+    &__items {
+      justify-content: center;
     }
-    .main-footer {
-        grid-template-columns: 1fr;
-    }
-    .footer-copy {
-        order: 1;
-    }
+  }
 }
 
 // Средние девайсы («таблетки», <= 768px)
 @media (max-width: 768px) {
-    .social-actions {
-        grid-gap: 40px;
+  //? Шапка
+  .header {
+    &__button {
+      display: none;
     }
+    &__phones {
+      display: none;
+    }
+  }
+  // ?Возрастные группы
+  .grouptype {
+    &__container {
+      //max-width: 440px;
+    }
+    .grouptype__item + .grouptype__item {
+      //margin: 30px 0 0 0;
+    }
+  }
+  // ?Смотрите наши видео на youtube
+  .youtube {
+    &-item__title {
+      margin: 15px 0 0 0;
+    }
+  }
+  // ?О федерации
+  .federation {
+    &__container {
+      flex-flow: column nowrap;
+      align-items: center;
+    }
+    &__img {
+      max-width: 500px;
+    }
+    &__content {
+      align-items: center;
+      padding: 40px 0 50px 0;
+    }
+    &__title {
+      align-self: flex-start;
+      margin: 30px 0 0 0;
+    }
+    &__subtitle {
+      align-self: flex-start;
+    }
+  }
+  //? Достижения
+  .achievements {
+    &__item {
+      max-width: 420px;
+      padding: 15px 20px 15px 20px;
+    }
+  }
+  // Карта
+  .map {
+    &__info {
+      //max-width: 220px;
+      display: none;
+    }
+  }
+  // ?Карате больше чем просто спорт
+  .quality {
+    &__items {
+      margin: 25px auto -15px auto;
+    }
+    &__item {
+      margin: 15px 15px 15px 15px;
+    }
+    &-item {
+    }
+  }
+  // ?Основатели первых курсов самообороны для женщин
+  .self-defence {
+    height: 720px;
+    background-position: 37% 55%;
+    & > div {
+      background: linear-gradient(180deg, rgba(0, 0, 0, 0) 45%, #000000 100%);
+    }
+  }
+  // ?Подвал
+  .footer {
+    &-social {
+      display: none;
+    }
+  }
 }
 
 // Малые девайсы («ландшафтные телефоны», <= 576px)
 @media (max-width: 576px) {
-    .head {
-        padding: 10px;
-        &-title {
-            & > .h4-like {
-                font-size: 10px;
-                line-height: 16px;
-            }
-            & > .h1-like {
-                margin: 10px 0 0 0;
-                font-size: 20px;
-                line-height: 24px;
-            }
-        }
-        &-wrap {
-            grid-template-columns: 1fr;
-        }
+  body {
+    background-color: #ededed;
+  }
+  .container-box {
+    padding: 50px 15px 40px 15px;
+  }
+  //Блок с кнопкой
+  .free-lesson {
+    margin: 40px 0 0 0;
+  }
+
+  //? Шапка
+  .header {
+    &__container {
+      //margin: 5px 0 5px 0;
+      height: 48px;
     }
-    .main {
-        padding: 150px 10px 10px 10px;
-        &-social {
-            & > .h1-like {
-                font-size: 28px;
-                line-height: 36px;
-            }
-        }
+    &__logo {
+      margin: 0 10px 0 0;
+      & > img {
+        height: 35px;
+      }
     }
-    .social-actions {
-        grid-gap: 15px;
+    &__title {
+      //display: flex;
+      //align-items: center;
+      & > span:last-child {
+        display: none;
+      }
+    }
+    &__button {
+      display: none;
+    }
+    &__phones {
+      margin: 0 0 0 auto;
+    }
+    &__mobile-ico {
+      display: flex;
+    }
+  }
+  // ?Баннер
+  .banner {
+    min-height: 640px;
+    padding: 40px 0 0 0;
+    margin: 48px 0 0 0;
+    &__container {
+      > *:not(:last-child) {
+        margin: initial;
+      }
+    }
+    &__title {
+      font-size: 58px;
+    }
+    &__subtitle {
+      font-size: 32px;
+    }
+    &__button {
+      margin: 280px 0 0 0;
+    }
+  }
+  // ?Возрастные группы
+  .grouptype {
+    &__container {
+      padding: 10px 20px 10px 20px;
+    }
+    &__item {
+      max-width: initial;
+      & + .grouptype__item {
+        margin: 20px 15px 10px 15px;
+      }
+    }
+  }
+  // ?Тренируйся с нами и стань чемпионом
+  .services {
+    &__items {
+      margin: 20px auto -10px auto;
+    }
+    &__item {
+      flex-flow: row nowrap;
+      max-width: initial;
+      margin: 10px 30px 10px 40px;
+      //max-width: 200px;
+    }
+    &-item {
+      &__ico {
+        min-width: 60px;
+      }
+      &__title {
+        text-align: initial;
+        margin: 0 0 0 20px;
+      }
+    }
+  }
+  // ?Квалифицированные и опытные тренера
+  .coach {
+    &__items {
+      margin: 20px 0 0 0;
+      flex-flow: row nowrap;
+      overflow: auto;
+      justify-content: flex-start;
+      padding: 0 0 5px 0;
+    }
+    &-item {
+      padding: 25px 10px 25px 10px;
+      &__img {
+        margin: 0 0 20px 0;
+      }
+      //&__title {
+      //  margin: 0 0 5px 0;
+      //}
+      //& > span:nth-last-of-type(2) {
+      //  margin: auto 0 5px 0;
+      //}
+      //& > span:nth-of-type(2) {
+      //  margin: 0 0 10px 0;
+      //}
+    }
+  }
+  // ?Смотрите наши видео на youtube
+  .youtube {
+    &__container {
+      & > div:nth-of-type(1) {
+        margin: 0 -15px -10px -15px;
+      }
+    }
+    &__items {
+      margin: 20px 0 0 0;
+    }
+    &__item {
+      margin: 10px 20px 10px 20px;
+    }
+    &-item__title {
+      margin: 10px 0 0 0;
+    }
+  }
+  // ?Мы в социальных сетях и на карте Ташкента
+  //Социальные сети
+  .social {
+    &__items {
+      margin: 30px auto -10px auto;
+    }
+    &-item {
+      min-width: initial;
+      &__title {
+        //margin: 10px 0 0 0;
+        display: none;
+      }
+    }
+  }
+  // Карта
+  .map {
+    &__container {
+      padding: 10px 15px 15px 15px;
+      position: absolute;
+      bottom: 0;
+    }
+    &__info {
+      max-width: initial;
+      width: 100%;
+    }
+  }
+  // ?Карате больше чем просто спорт
+  .quality {
+    &__items {
+      margin: 20px auto -10px auto;
+    }
+    &__item {
+      max-width: 440px;
+      margin: 10px 10px 10px 10px;
+    }
+    &-item {
+      &__title {
         margin: 10px 0 0 0;
+      }
     }
-    .footer-contacts {
-        //!!!
-        // margin: 0 0 75px 0;
-        & > .h3-like {
-            font-size: 16px;
-            line-height: 24px;
-        }
+  }
+  // ?Подвал
+  .footer {
+    &__container {
+      flex-flow: column nowrap;
     }
-    .footer-copy {
-        font-size: 10px;
-        line-height: 16px;
+    &__logo {
+      order: 1;
+      flex-flow: row nowrap;
+      max-width: initial;
+      align-items: center;
+      & > img {
+        height: 80px;
+        margin: 0 10px 0 0;
+      }
     }
+    &__address {
+      margin: 0 0 20px 20px;
+    }
+  }
 }
