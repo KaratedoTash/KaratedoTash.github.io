@@ -795,6 +795,10 @@ body {
   color: #a83232;
 }
 
+.social-item:hover .social-item__title {
+  text-decoration: none;
+}
+
 .social-item__ico {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -809,6 +813,7 @@ body {
   text-align: center;
   margin: 20px 0 0 0;
   font-size: 18px;
+  text-decoration: underline;
 }
 
 .map {
