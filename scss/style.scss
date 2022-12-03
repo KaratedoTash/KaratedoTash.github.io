@@ -639,6 +639,7 @@ body {
   }
   &__item {
     flex: 1 1 auto;
+    min-height: 150px;
     max-width: 320px;
     min-width: 280px;
     width: 30%;
