@@ -6,9 +6,9 @@
 // @extend %border;
 
 // миксины
-@mixin bordercol($col) {
-  border: 1px solid $col;
-}
+//@mixin bordercol($col) {
+//  border: 1px solid $col;
+//}
 // @include bordercol(black);
 
 // @import "_fonts.scss";
