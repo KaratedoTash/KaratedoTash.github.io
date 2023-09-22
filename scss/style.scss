@@ -425,8 +425,8 @@ body {
 
 // ?Тренируйся с нами и стань чемпионом
 .services {
-  &__container {
-  }
+  //&__container {
+  //}
   &__items {
     display: flex;
     flex-flow: row wrap;
@@ -488,12 +488,16 @@ body {
     background: #ffffff;
     //box-shadow: -2px 5px 15px 0 rgba(0, 0, 0, 0.1);
     border-radius: 20px;
-    box-shadow: rgba(38, 38, 38, 0.04) 0px 1px 2px, rgba(38, 38, 38, 0.16) 0px 4px 8px;
+    box-shadow:
+      rgba(38, 38, 38, 0.04) 0px 1px 2px,
+      rgba(38, 38, 38, 0.16) 0px 4px 8px;
     transition: box-shadow 0.3s ease 0s;
     border: 1px solid rgba(38, 38, 38, 0.08);
     &:hover {
       border-color: rgba(38, 38, 38, 0.16);
-      box-shadow: rgba(38, 38, 38, 0.04) 0px 1px 2px, rgba(38, 38, 38, 0.16) 0px 8px 16px;
+      box-shadow:
+        rgba(38, 38, 38, 0.04) 0px 1px 2px,
+        rgba(38, 38, 38, 0.16) 0px 8px 16px;
     }
     &__img {
       display: block;
@@ -652,12 +656,16 @@ body {
     padding: 20px 25px 20px 25px;
     background: #ffffff;
     border-radius: 20px;
-    box-shadow: rgba(38, 38, 38, 0.04) 0px 1px 2px, rgba(38, 38, 38, 0.16) 0px 4px 8px;
+    box-shadow:
+      rgba(38, 38, 38, 0.04) 0px 1px 2px,
+      rgba(38, 38, 38, 0.16) 0px 4px 8px;
     transition: box-shadow 0.3s ease 0s;
     border: 1px solid rgba(38, 38, 38, 0.08);
     &:hover {
       border-color: rgba(38, 38, 38, 0.16);
-      box-shadow: rgba(38, 38, 38, 0.04) 0px 1px 2px, rgba(38, 38, 38, 0.16) 0px 8px 16px;
+      box-shadow:
+        rgba(38, 38, 38, 0.04) 0px 1px 2px,
+        rgba(38, 38, 38, 0.16) 0px 8px 16px;
     }
     &__txt {
       font-size: 18px;
@@ -671,8 +679,8 @@ body {
 // ?Мы в социальных сетях и на карте Ташкента
 //Социальные сети
 .social {
-  &__container {
-  }
+  //&__container {
+  //}
   &__items {
     display: flex;
     flex-flow: row wrap;
@@ -750,8 +758,8 @@ body {
 
 // ?Карате больше чем просто спорт
 .quality {
-  &__container {
-  }
+  //&__container {
+  //}
   &__items {
     display: flex;
     flex-flow: row wrap;
@@ -875,8 +883,8 @@ body {
       height: 20px;
       margin: 0 20px 0 0;
     }
-    &__street {
-    }
+    //&__street {
+    //}
     &__phone {
       display: flex;
       align-items: flex-start;
